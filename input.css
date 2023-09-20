@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-mainBgColor font-monteserrat;
+}
+
+nav {
+  @apply flex flex-row text-white justify-between px-28 py-5 items-center;
+}
+
+section {
+  @apply border-y border-slate-700;
+}
+
+.navList {
+  @apply flex flex-row items-center gap-10;
+}
+
+.registerBtn,
+.readMoreBtn {
+  @apply bg-gradient-to-r from-pinkishPurple to-lightPurple  px-8 py-2 rounded-md text-white font-semibold;
+}
+
+.textSection {
+  @apply w-1/2;
+}
+.imgSection {
+  @apply w-1/2;
+}
+
+.sectionHeading {
+  @apply text-3xl font-bold;
+}
+
+/*first section*/
+.firstSection {
+  @apply flex flex-row pl-28 pt-5 h-auto;
+}
+
+.titleImg {
+  @apply h-48;
+}
+
+.text {
+  @apply text-white mt-2;
+}
+
+.countDowntime {
+  @apply flex flex-row gap-4 mt-14 text-white;
+}
+
+.time {
+  @apply text-4xl;
+}
+
+.firstImg {
+  @apply h-100 ml-auto  block;
+}
+
+/*second section*/
+.secondSection {
+  @apply flex flex-row items-center gap-20 px-28 py-10 h-auto;
+}
+
+/*third section*/
+.thirdSection {
+  @apply flex flex-row items-center px-28 py-0 h-auto;
+}
+
+/*fourth section*/
+.fourthSection {
+  @apply flex flex-row items-center px-28 py-10 h-auto;
+}
+
+.keyAttributes {
+  @apply flex flex-col gap-5;
+}
+
+.attributeHeading {
+  @apply text-pinkishPurple font-bold;
+}
+
+/*fifth section*/
+.fifthSection {
+  @apply flex flex-row  px-28 py-10 h-auto;
+}
+
+.faqGrp {
+  @apply flex flex-col mt-10 w-11/12;
+}
+
+.faq {
+  @apply flex flex-row justify-between items-center border-b border-pinkishPurple py-4;
+}
+
+.faqSign {
+  @apply text-pinkishPurple  font-bold;
+}
+
+/*seventh section*/
+.seventhSection {
+  @apply flex flex-col-reverse px-28 py-10 h-auto;
+}
+
+.medalGrp {
+  @apply flex flex-row mt-12;
+}
+
+.medalContainer {
+  @apply flex flex-col items-center relative;
+}
+
+.medal {
+  @apply w-28 relative top-16;
+}
+
+.medalBox {
+  @apply h-48 w-36 flex flex-col items-center justify-end bg-lightPurple rounded-lg p-5 font-bold border border-pinkishPurple;
+}
+
+.position,
+.runner {
+  @apply text-white;
+}
+
+.position {
+  @apply text-2xl;
+}
+
+.prize {
+  @apply mt-4;
+}
