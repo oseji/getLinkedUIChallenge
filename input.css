@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  @apply scroll-smooth;
+}
+
 body {
   @apply bg-mainBgColor font-monteserrat;
 }
@@ -178,7 +182,7 @@ footer {
 }
 
 .footerGrp {
-  @apply flex flex-row justify-between;
+  @apply flex flex-row justify-between mb-14;
 }
 
 .followUsGrp {

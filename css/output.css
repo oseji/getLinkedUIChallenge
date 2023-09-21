@@ -550,20 +550,12 @@ video {
   bottom: 4rem;
 }
 
-.left-1\/2 {
-  left: 50%;
+.left-1\/4 {
+  left: 25%;
 }
 
 .right-0 {
   right: 0px;
-}
-
-.top-20 {
-  top: 5rem;
-}
-
-.left-1\/4 {
-  left: 25%;
 }
 
 .top-24 {
@@ -788,6 +780,10 @@ video {
 
 .outline {
   outline-style: solid;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -1140,6 +1136,7 @@ footer {
 }
 
 .footerGrp {
+  margin-bottom: 3.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
