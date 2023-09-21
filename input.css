@@ -20,7 +20,7 @@ section {
 
 .registerBtn,
 .readMoreBtn {
-  @apply bg-gradient-to-r from-pinkishPurple to-lightPurple  px-8 py-2 rounded-md text-white font-semibold;
+  @apply bg-gradient-to-r from-pinkishPurple to-lightPurple  px-8 py-2 rounded-md text-white font-semibold transition ease-in-out duration-200 hover:scale-110;
 }
 
 .textSection {
@@ -99,6 +99,15 @@ section {
   @apply text-pinkishPurple  font-bold;
 }
 
+/*sixth section*/
+.sixthSection {
+  @apply px-28 py-10 h-auto relative;
+}
+
+.timeline {
+  @apply mx-auto block;
+}
+
 /*seventh section*/
 .seventhSection {
   @apply flex flex-col-reverse px-28 py-10 h-auto;
@@ -131,4 +140,55 @@ section {
 
 .prize {
   @apply mt-4;
+}
+
+/*eighth section*/
+.eighthSection {
+  @apply py-10 h-auto;
+}
+
+.sponsorsImg {
+  @apply w-10/12 mt-12 mx-auto block;
+}
+
+/*ninth section*/
+.ninthSection {
+  @apply flex flex-row px-28 py-10 h-auto;
+}
+
+.policyBox {
+  @apply mt-10 border border-pinkishPurple rounded-lg p-10 bg-mainBgColor;
+}
+
+.policyHeading {
+  @apply font-bold;
+}
+
+.policy {
+  @apply flex flex-row gap-3;
+}
+
+.tick {
+  @apply h-5 mt-3;
+}
+
+/* footer */
+footer {
+  @apply px-28 py-10 h-auto;
+}
+
+.footerGrp {
+  @apply flex flex-row justify-between;
+}
+
+.followUsGrp {
+  @apply flex flex-row items-center gap-2;
+}
+
+.contactInfo {
+  @apply flex flex-row gap-4;
+}
+
+.contactIcon {
+  @apply h-4 mt-2.5;
 }

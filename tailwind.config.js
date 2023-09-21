@@ -10,6 +10,9 @@ module.exports = {
         device: "87vh",
         100: "450px",
         78: "296px",
+        84: "348px",
+        200: "600px",
+        250: "700px",
       },
       colors: {
         lightPurple: "#903AFF",
@@ -20,6 +23,11 @@ module.exports = {
       },
       width: {
         98: "400px",
+        100: "450px",
+        110: "500px",
+      },
+      left: {
+        "1/4": "25%",
       },
     },
   },
