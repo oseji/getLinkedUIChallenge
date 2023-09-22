@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  @apply bg-mainBgColor font-monteserrat;
+  @apply bg-mainBgColor font-monteserrat max-w-7xl mx-auto;
 }
 
 nav {
@@ -23,7 +23,8 @@ section {
 }
 
 .registerBtn,
-.readMoreBtn {
+.readMoreBtn,
+.submitBtn {
   @apply bg-gradient-to-r from-pinkishPurple to-lightPurple  px-8 py-2 rounded-md text-white font-semibold transition ease-in-out duration-200 hover:scale-110;
 }
 
@@ -186,7 +187,7 @@ footer {
 }
 
 .followUsGrp {
-  @apply flex flex-row items-center gap-2;
+  @apply flex flex-row items-center gap-5;
 }
 
 .contactInfo {
@@ -195,4 +196,65 @@ footer {
 
 .contactIcon {
   @apply h-4 mt-2.5;
+}
+
+/* contact page */
+.contactPage {
+  @apply flex flex-row justify-between items-center px-28 py-10 h-auto;
+}
+
+.contactForm {
+  @apply w-7/12 p-10 rounded-lg bg-purple-950 bg-opacity-10;
+}
+
+.formGrp {
+  @apply flex flex-col gap-3;
+}
+
+input,
+textarea,
+select {
+  @apply border border-white py-2 px-5 bg-transparent text-white rounded-lg;
+}
+
+input::placeholder,
+textarea::placeholder {
+  @apply text-white text-xs;
+}
+
+textarea {
+  @apply h-32;
+}
+
+/* registration page */
+.registarationPage {
+  @apply flex flex-row justify-between items-center px-28 py-10 h-auto;
+}
+
+.registrationForm {
+  @apply p-10 rounded-lg bg-purple-950 bg-opacity-10;
+}
+
+label {
+  @apply text-white;
+}
+
+.inputGrp {
+  @apply flex flex-row justify-between mb-5 gap-4;
+}
+
+.dropdownGrp {
+  @apply flex flex-col;
+}
+
+select {
+  @apply text-xs;
+}
+
+option {
+  @apply text-black text-base;
+}
+
+.registrationField {
+  @apply w-60 mt-2;
 }
