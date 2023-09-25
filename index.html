@@ -13,23 +13,37 @@
     <title>GetLinked</title>
   </head>
   <body>
-    <nav class="navbar">
+    <nav class="navbar closedNav">
       <div class="logoGrp">
         <img src="imgs/getlinked.png" alt="Logo" class="logo" />
 
-        <img src="imgs/hamburger.png" alt="menuIcon" class="hamburgerMenu" />
+        <img
+          src="imgs/hamburger.png"
+          alt="menuIcon"
+          class="hamburgerMenu"
+          id="menuBtn"
+        />
+
+        <img
+          src="imgs/closeBtn.png"
+          alt="close button"
+          class="closeMenu hidden"
+          id="closeBtn"
+        />
       </div>
 
-      <ul class="navList">
-        <a href="#timeLine" class="navLink">Timeline</a>
-        <a href="" class="navLink" id="overview">Overview</a>
-        <a href="#faqSection" class="navLink">FAQs</a>
-        <a href="" class="navLink" id="contactLink">Contact</a>
+      <div class="navListContainer closeList">
+        <ul class="navList">
+          <a href="#timeLine" class="navLink">Timeline</a>
+          <a href="" class="navLink" id="overview">Overview</a>
+          <a href="#faqSection" class="navLink">FAQs</a>
+          <a href="" class="navLink" id="contactLink">Contact</a>
 
-        <button class="registerBtn lg:ml-20" id="registrationLink">
-          Register
-        </button>
-      </ul>
+          <button class="registerBtn lg:ml-20" id="registrationLink">
+            Register
+          </button>
+        </ul>
+      </div>
     </nav>
 
     <main class="landingPage">

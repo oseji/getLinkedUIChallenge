@@ -1,6 +1,11 @@
 "use strict";
 
 const navbar = document.querySelector(".navbar");
+const navListContainer = document.querySelector(".navListContainer");
+const hamburgerMenu = document.querySelector(".hamburgerMenu");
+const closeMenu = document.querySelector(".closeMenu");
+const logo = document.querySelector(".logo");
+
 const landingPage = document.querySelector(".landingPage");
 const contactPage = document.querySelector(".contactPage");
 const registarationPage = document.querySelector(".registarationPage");
@@ -37,5 +42,28 @@ navbar.addEventListener("click", (e) => {
     registarationPage.classList.remove("extraPageVisible");
     contactPage.classList.add("extraPageHidden");
     contactPage.classList.remove("extraPageVisible");
+  }
+
+  //open menu
+  if (clicked.id == "menuBtn") {
+    console.log("clicked menu");
+    hamburgerMenu.classList.toggle("hidden");
+    closeMenu.classList.toggle("hidden");
+    logo.classList.add("hidden");
+
+    // navListContainer.classList.remove("hidden");
+    navListContainer.classList.remove("closeList");
+    navbar.classList.remove("closedNav");
+  }
+
+  //close menu
+  if (clicked.id == "closeBtn") {
+    console.log("clicked menu");
+    hamburgerMenu.classList.toggle("hidden");
+    closeMenu.classList.toggle("hidden");
+    logo.classList.remove("hidden");
+
+    navListContainer.classList.add("closeList");
+    navbar.classList.add("closedNav");
   }
 });
