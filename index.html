@@ -13,16 +13,22 @@
     <title>GetLinked</title>
   </head>
   <body>
-    <nav>
-      <img src="imgs/getlinked.png" alt="Logo" class="logo" />
+    <nav class="navbar">
+      <div class="logoGrp">
+        <img src="imgs/getlinked.png" alt="Logo" class="logo" />
+
+        <img src="imgs/hamburger.png" alt="menuIcon" class="hamburgerMenu" />
+      </div>
 
       <ul class="navList">
         <a href="#timeLine" class="navLink">Timeline</a>
-        <a href="" class="navLink">Overview</a>
+        <a href="" class="navLink" id="overview">Overview</a>
         <a href="#faqSection" class="navLink">FAQs</a>
-        <a href="" class="navLink">Contact</a>
+        <a href="" class="navLink" id="contactLink">Contact</a>
 
-        <button class="registerBtn ml-20">Register</button>
+        <button class="registerBtn lg:ml-20" id="registrationLink">
+          Register
+        </button>
       </ul>
     </nav>
 
@@ -31,12 +37,14 @@
         <div class="textSection mt-20">
           <img class="titleImg" src="imgs/Title.png" alt="title" />
 
-          <p class="text font-semibold w-2/3">
+          <p class="text font-semibold text-center lg:text-start lg:w-2/3">
             Participate in getlinked tech Hackathon 2023 stand a chance to win a
             Big prize
           </p>
 
-          <button class="registerBtn mt-7">Register</button>
+          <button class="registerBtn mt-7 mx-auto lg:mx-0 block">
+            Register
+          </button>
 
           <div class="countDowntime">
             <p class="time" id="hours">00 <span class="text-xs">H</span></p>
@@ -68,7 +76,7 @@
       <section class="secondSection">
         <div class="imgSection">
           <img
-            class="h-100 ml-auto block"
+            class="lg:h-100 ml-auto block"
             src="imgs/The big idea.png"
             alt="The Big Idea"
           />
@@ -167,7 +175,9 @@
               </p>
             </div>
 
-            <button class="readMoreBtn w-40 mt-8">Read More</button>
+            <button class="readMoreBtn w-40 mt-3 lg:mt-8 mx-auto lg:mx-0">
+              Read More
+            </button>
           </div>
         </div>
       </section>
@@ -177,7 +187,7 @@
           <h1 class="sectionHeading text-white">Frequently Asked</h1>
           <h1 class="sectionHeading text-pinkishPurple mb-5">Questions</h1>
 
-          <p class="text w-11/12">
+          <p class="text text-center lg:text-start lg:w-11/12">
             We got answers to the questions that you might want to ask about
             getlinked Hackathon 1.0
           </p>
@@ -235,8 +245,8 @@
 
       <section class="seventhSection">
         <!-- IMAGES -->
-        <div class="flex flex-row justify-center gap-10">
-          <img class="h-84 mr-10" src="imgs/cup.png" alt="A trophy" />
+        <div class="seventhSectionGrp">
+          <img class="lg:h-84 lg:mr-10" src="imgs/cup.png" alt="A trophy" />
 
           <div class="medalGrp">
             <div class="medalContainer mt-2">
@@ -252,19 +262,21 @@
                 <p class="prize">N300,000</p>
               </div>
             </div>
+
             <div class="medalContainer">
               <img
                 src="imgs/gold_medal 1.png"
                 alt="gold medal"
-                class="w-48 z-10"
+                class="lg:w-48 z-10 relative top-10"
               />
 
-              <div class="medalBox relative bottom-16">
-                <p class="position">21st</p>
+              <div class="medalBox relative top-2 lg:top-0 lg:bottom-16">
+                <p class="position">1st</p>
                 <p class="runner">Runner</p>
                 <p class="prize">N400,000</p>
               </div>
             </div>
+
             <div class="medalContainer mt-2">
               <img
                 src="imgs/bronze_medal 1.png"
@@ -287,7 +299,7 @@
             <h1 class="sectionHeading text-white">Prizes and</h1>
             <h1 class="sectionHeading text-pinkishPurple mb-5">Rewards</h1>
 
-            <p class="text w-98">
+            <p class="text text-center lg:text-start w-full lg:w-98">
               Highlight of the prizes or rewards for winners and for
               participants.
             </p>
@@ -300,7 +312,7 @@
           Partners and Sponsors
         </h1>
 
-        <p class="text text-center w-110 mx-auto block">
+        <p class="text text-center w-10/12 lg:w-110 mx-auto block">
           Getlinked Hackathon 1.0 is honored to have the following major
           companies as its partners and sponsors
         </p>
@@ -317,9 +329,11 @@
           <h1 class="sectionHeading text-white">Privacy Policy and</h1>
           <h1 class="sectionHeading text-pinkishPurple mb-5">Terms</h1>
 
-          <p class="text mb-7">Last updated on September 12, 2023</p>
+          <p class="text text-center lg:text-start mb-7">
+            Last updated on September 12, 2023
+          </p>
 
-          <p class="text w-110">
+          <p class="text text-center lg:text-start lg:w-110">
             Below are our privacy & policy, which outline a lot of goodies. it’s
             our aim to always take of our participant
           </p>
@@ -361,9 +375,9 @@
           </div>
         </div>
 
-        <div class="imgSection relative">
+        <div class="imgSection lg:relative">
           <img
-            class="h-200 absolute bottom-0 right-0"
+            class="h-80 lg:h-200 lg:absolute lg:bottom-0 lg:right-0 lg:mx-0 mx-auto block"
             src="imgs/privacy.png"
             alt="privacy image"
           />
@@ -372,7 +386,7 @@
 
       <footer>
         <div class="footerGrp">
-          <div class="footerInfo w-1/2">
+          <div class="footerInfo lg:w-1/2">
             <div class="text-2xl font-bold">
               <p class="text-white">
                 get <span class="text-pinkishPurple">linked</span>
@@ -428,7 +442,7 @@
       </footer>
     </main>
 
-    <div class="contactPage">
+    <section class="contactPage extraPageHidden">
       <div class="contactTextGrp">
         <h1 class="sectionHeading text-pinkishPurple mb-3">Get in touch</h1>
 
@@ -453,8 +467,8 @@
         </div>
       </div>
 
-      <form action="" class="contactForm">
-        <h1 class="text-xl font-bold text-pinkishPurple">
+      <form class="contactForm">
+        <h1 class="text-xl w-2/3 lg:w-auto font-bold text-pinkishPurple">
           Questions or need assistance?
         </h1>
         <h1 class="text-xl font-bold text-pinkishPurple mb-5">
@@ -463,7 +477,11 @@
 
         <div class="formGrp">
           <input type="text" id="firstName" placeholder="First Name" />
+
+          <input type="text" id="topic" placeholder="Topic" class="lg:hidden" />
+
           <input type="email" id="email" placeholder="Mail" />
+
           <textarea
             name=""
             id="message"
@@ -474,10 +492,21 @@
         </div>
 
         <button class="submitBtn mx-auto block mt-7">Submit</button>
-      </form>
-    </div>
 
-    <div class="registarationPage">
+        <div class="flex flex-col items-center gap-3 mt-8 lg:hidden">
+          <p class="text-pinkishPurple">Share on</p>
+
+          <div class="flex flex-row gap-5">
+            <img src="imgs/ig.png" alt="Instagram" class="folowImg" />
+            <img src="imgs/x.png" alt="X" class="folowImg" />
+            <img src="imgs/fb.png" alt="Facebook" class="folowImg" />
+            <img src="imgs/linkedn.png" alt="Linkedn" class="folowImg" />
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section class="registarationPage extraPageHidden">
       <div>
         <img
           src="imgs/3d-graphic-designer-showing-thumbs-up-png 1.png"
@@ -489,9 +518,13 @@
       <form class="registrationForm">
         <h1 class="sectionHeading text-pinkishPurple mb-8">Register</h1>
 
-        <p class="text">Be part of this movement!🚶‍♂️🚶‍♂️</p>
+        <p class="text text-center lg:text-start">
+          Be part of this movement!🚶‍♂️🚶‍♂️
+        </p>
 
-        <h1 class="text text-xl font-bold mb-7">CREATE YOUR ACCOUNT</h1>
+        <h1 class="text text-center lg:text-start text-xl font-bold mb-7">
+          CREATE YOUR ACCOUNT
+        </h1>
 
         <div class="registrationGrp">
           <div class="inputGrp">
@@ -505,7 +538,7 @@
               />
             </div>
 
-            <div>
+            <div class="flex flex-col">
               <label for="phoneNumber">Phone</label>
               <input
                 type="number"
@@ -517,7 +550,7 @@
           </div>
 
           <div class="inputGrp">
-            <div>
+            <div class="flex flex-col">
               <label for="teamEmail">Email</label>
               <input
                 type="email"
@@ -580,6 +613,6 @@
 
         <button class="registerBtn w-full mt-5">Register Now</button>
       </form>
-    </div>
+    </section>
   </body>
 </html>
